@@ -52,7 +52,7 @@ function updateHTML(){
         li.appendChild(span)
         li.appendChild(button)
         listOfTasks.appendChild(li)
-        textTaskCounter.textContent = `Tasks Completed : ${DoneTasks}/${tasks.length}`
+        textTaskCounter.textContent = `Completed Tasks : ${DoneTasks}/${tasks.length}`
     }
   
 }

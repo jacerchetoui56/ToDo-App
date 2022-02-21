@@ -11,6 +11,7 @@
   }
   .container {
     min-height: 70vh;
+    /* width: 95%; */
   }
   header {
     width: 98%;
