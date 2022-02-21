@@ -25,19 +25,13 @@
 }
 @media (min-width: 768px) {
   .container {
-    width: 750px;
+    width: 35rem;
   }
 }
 /* medium */
 @media (min-width: 992px) {
   .container {
-    width: 970px;
-  }
-}
-/* large  */
-@media (min-width: 1200px) {
-  .container {
-    width: 1000px;
+    width: 50rem;
   }
 }
 
@@ -50,7 +44,7 @@ body {
   );
 }
 .container {
-  min-height: 50vh;
+  min-height: 60vh;
   background-color: rgb(254, 254, 254, 0.8);
   position: absolute;
   top: 50%;
@@ -66,7 +60,7 @@ body {
 
 header {
   width: 90%;
-  margin: auto;
+  margin: 0 auto;
   margin-bottom: 5rem;
   border-radius: 5px;
 }
