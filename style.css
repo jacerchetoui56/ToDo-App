@@ -107,6 +107,7 @@ header {
 .tasks {
   max-height: 50vh;
   overflow-y: auto;
+  overflow-x: hidden;
   padding: 10px;
   width: 95%;
   margin: auto;
@@ -124,6 +125,7 @@ header {
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(to right, rgb(0 155 191 / 23%) 70%, #fff);
+  transition: all ease-out 5s;
 }
 .nameTask {
   font-size: 20px;
@@ -142,11 +144,17 @@ header {
   cursor: pointer;
 }
 
-.task.completed {
+/* .task.completed {
   background-color: rgb(133 115 115 / 16%);
   text-decoration: line-through;
   color: #e7e7e769;
 }
 .task.completed .Done {
   display: none;
+} */
+.task.completed {
+  display: none;
+}
+.task.completed {
+  transform: translateX(-100%);
 }
