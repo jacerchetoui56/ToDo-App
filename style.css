@@ -144,17 +144,11 @@ header {
   cursor: pointer;
 }
 
-/* .task.completed {
+.task.completed {
   background-color: rgb(133 115 115 / 16%);
   text-decoration: line-through;
   color: #e7e7e769;
 }
 .task.completed .Done {
   display: none;
-} */
-.task.completed {
-  display: none;
-}
-.task.completed {
-  transform: translateX(-100%);
 }

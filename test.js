@@ -23,7 +23,6 @@ updateHTML()
 addbtn.addEventListener("click",(e)=>{
     e.preventDefault()
     tasks.unshift({name: inputZone.value ,isDone:false})
-
     taskCounter++
     inputZone.value = ""
     updateHTML()
