@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
 /* small */
@@ -73,6 +75,9 @@ header {
   justify-content: space-between;
   transition: 0.5s;
 }
+.input-form input:focus {
+  border-color: #1a3dff;
+}
 
 .input-zone {
   font-size: 1.5rem;
@@ -87,7 +92,7 @@ header {
   outline: none;
   border: none;
   padding: 10px;
-  font-size: 15px;
+  font-size: 1.1rem;
   background-color: rgb(4 153 223);
 }
 .add-btn:hover {
@@ -124,7 +129,11 @@ header {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(to right, rgb(0 155 191 / 23%) 70%, #fff);
+  background-image: linear-gradient(
+    to right,
+    rgba(3, 99, 121, 0.23) 70%,
+    rgb(0 155 191 / 50%)
+  );
   transition: all ease-out 5s;
 }
 .nameTask {
@@ -145,9 +154,9 @@ header {
 }
 
 .task.completed {
-  background-color: rgb(133 115 115 / 16%);
+  background-color: rgba(179, 179, 179, 0.16);
   text-decoration: line-through;
-  color: #e7e7e769;
+  color: rgba(0, 0, 0, 0.5);
 }
 .task.completed .Done {
   display: none;
