@@ -64,3 +64,8 @@ function updateHTML() {
     }
 
 }
+
+function resetTasks() {
+    localStorage.removeItem("Tasks")
+    window.location.reload()
+}

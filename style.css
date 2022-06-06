@@ -161,3 +161,13 @@ header {
 .task.completed .Done {
   display: none;
 }
+
+button {
+  align-self: flex-end;
+  background-color: #ff1a49;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+}
