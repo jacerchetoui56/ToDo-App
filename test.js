@@ -27,11 +27,13 @@ updateHTML()
 
 addbtn.addEventListener("click", (e) => {
     e.preventDefault()
-    tasks.unshift({ name: inputZone.value, isDone: false })
-    localStorage.setItem("Tasks", JSON.stringify(tasks))
-    taskCounter++
-    inputZone.value = ""
-    updateHTML()
+    if (inputZone.value != "") {
+        tasks.unshift({ name: inputZone.value, isDone: false })
+        localStorage.setItem("Tasks", JSON.stringify(tasks))
+        taskCounter++
+        inputZone.value = ""
+        updateHTML()
+    }
 })
 
 function completedTask(i) {
